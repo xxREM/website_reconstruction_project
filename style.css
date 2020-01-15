@@ -1,0 +1,137 @@
+header {
+    background-color: #fff;
+
+}
+
+nav {
+    color: gray;
+    width: 790px;
+    height: 28px;
+    display: inline;
+}
+
+.title-bar {
+    align-items: center;
+    display: flex;
+    margin: 15px 15px 0px 15px;
+}
+
+li {
+    display: inline;
+    
+}
+
+
+a {
+    display: inline-block;
+}
+
+.sign-in {
+    background-color: #4285f4;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 800;
+    margin-top: 4px;
+    height: 40px;
+    padding: 10px;
+    min-width: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    padding-right: 25px;
+    padding-top: 10px;
+}
+
+.menu-options {
+    position: absolute;
+    top: -2%;
+    right: -43%;
+    display: flex;
+    height: 30px;
+    width: 150px;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    margin: 4px 0 -28px 4px;
+    padding: 0 0 0 4px;
+    color: black;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    outline: none;
+    height: 34px;
+    line-height: 34px;
+    width: 95%;
+}
+
+.VoiceSearch {
+    margin: 0px 0 0px 87%;
+    padding-right: 6px;
+}
+
+.nav-menu {
+    margin-left: 12%;
+}
+
+div {
+    
+}
+
+#more {
+    margin-right: 36px;
+}
+
+#googlelogo {
+    border: 0;
+    margin: 8px 18px 0 -4px;
+}
+
+.nav-menu a {
+    margin 11px 1px 0 1px;
+    padding: 16px 12px 12px 10px;
+    color: #5f6368;
+    line-height: 16px;
+    white-space: nowrap;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-border {
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #dfe1e5;
+    width: 640px;
+    border-radius: 24px;
+    height: 44px;
+    padding-left: 14px;
+    margin-left: 20px;
+    margin-top: 4px;
+    position: relative;
+}
+
+.line {
+    height: 1px;
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+}
+
+.searchbar {
+    height: 34px;
+    display: inline;
+}
+
+.head {
+    position: relative;
+}
+
+#results-bar {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    top: 0;
+    line-height: 43px;
+    padding-left: 162px;
+    color: #70757a;
+}
