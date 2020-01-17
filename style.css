@@ -1,13 +1,20 @@
 header {
     background-color: #fff;
+}
 
+body {
+    font-family: Helvetica,Arial,sans-serif;
+    color: #222;
+    background-color: #fff;
+    width: 100%;
 }
 
 nav {
     color: gray;
-    width: 790px;
-    height: 28px;
-    display: inline;
+    margin-top: -18px;
+    display: inline-block;
+    height: 72px;
+    position: relative;
 }
 
 .title-bar {
@@ -18,12 +25,16 @@ nav {
 
 li {
     display: inline;
-    
+}
+
+li i {
+    margin-right: 5px;
 }
 
 
 a {
     display: inline-block;
+    text-decoration: none;
 }
 
 .sign-in {
@@ -31,72 +42,96 @@ a {
     border-radius: 3px;
     color: #fff;
     font-weight: 800;
-    margin-top: 4px;
-    height: 40px;
-    padding: 10px;
+    padding: 8px;
+    display: inline;
+    position: absolute;
     min-width: 60px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu {
-    padding-right: 25px;
-    padding-top: 10px;
+    padding-right: 18px;
+    padding-top: 3px;
+    position: relative;
+    
 }
 
 .menu-options {
-    position: absolute;
-    top: -2%;
-    right: -43%;
-    display: flex;
+    position: relative;
+    display: inline-block;
     height: 30px;
     width: 150px;
+    padding-left: 20%;
+    padding-right: 10px;
 }
 
 input {
     border: none;
     background-color: transparent;
-    margin: 4px 0 -28px 4px;
-    padding: 0 0 0 4px;
-    color: black;
+    margin: 4px 0 -29px 4px;
+    padding: 0 0 0 3px;
+    color: rgba(0,0,0,.87);
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     outline: none;
     height: 34px;
     line-height: 34px;
-    width: 95%;
+    width: 100%;
 }
 
 .VoiceSearch {
-    margin: 0px 0 0px 87%;
-    padding-right: 6px;
+    padding: 0;
+    margin-left: 87%;
 }
 
 .nav-menu {
-    margin-left: 12%;
+    margin-left: 108px;
+    margin-top: 15px;
 }
 
-div {
-    
+.SearchButton {
+    padding-left: 8px;
 }
 
 #more {
     margin-right: 36px;
 }
 
+em {
+    color: #52565A;
+    font-weight: bold;
+    font-style: normal;
+}
+
 #googlelogo {
     border: 0;
-    margin: 8px 18px 0 -4px;
+    display: relative;
+    margin: -10px 14px 0 -6px;
+}
+
+.nav-menu li:first-child a {
+    border-bottom: 3px solid #1A73E8;
 }
 
 .nav-menu a {
-    margin 11px 1px 0 1px;
+    margin: 11px -2px 0px 0px;
     padding: 16px 12px 12px 10px;
     color: #5f6368;
     line-height: 16px;
     white-space: nowrap;
+    position: relative;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-menu a:hover {
+    color: #2f5bb7;
+}
+
+.search-border:hover {
+    -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
 }
 
 .search-border {
@@ -105,22 +140,28 @@ div {
     border: 1px solid #dfe1e5;
     width: 640px;
     border-radius: 24px;
+    -webkit-box-flex: 0;
     height: 44px;
     padding-left: 14px;
     margin-left: 20px;
-    margin-top: 4px;
+    flex: 0 1 auto;
+    margin-top: 5px;
     position: relative;
 }
 
+ul {
+    margin: 0;
+}
+
 .line {
-    height: 1px;
     border-bottom: 1px solid #ebebeb;
-    position: relative;
+    width: 100%;
 }
 
 .searchbar {
     height: 34px;
-    display: inline;
+    display: inline-block;
+    width: 640px;
 }
 
 .head {
@@ -132,6 +173,147 @@ div {
     font-size: 14px;
     top: 0;
     line-height: 43px;
-    padding-left: 162px;
+    margin-left: 158px;
     color: #70757a;
+}
+
+.search-col {
+    margin: 0;
+    min-width: 1127px;
+    display: block;
+    padding: 0;
+    border: 0;
+    height: 100%;
+}
+
+.result-box {
+    width: 616px;
+    margin-left: 158px;
+    margin-right: 0px;
+    text-align: left;
+}
+
+.result-link {
+    font-size: 14px;
+    color: #3C4043;
+    font-style: normal;
+    padding-top: 1px;
+    line-height: 1.3;
+}
+
+.result-title {
+    font-size: 20px;
+    line-height: 1.3;
+    display: inline-block;
+    padding-top: 2px;
+    margin-bottom: 3px;
+    color: #1a0dab
+}
+
+.result p {
+    font-size: 14px;
+    color: #3c4043;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 1.57;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.result {
+    margin-bottom: 28px;
+    padding-top: 7px;
+}
+
+.main {
+    max-width: 1280px;
+    height: 100%;
+    display: block;
+    min-width: 616px;
+}
+
+.contents {
+    width: 100%;
+    position: relative;
+}
+
+.sidebar {
+    position: relative;
+    width: 20%;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    text-align: left;
+    color: #222;
+    min-width: 268px;
+    padding-bottom: 10px;
+    display: block;
+    border: 0;
+    padding: 0;
+}
+
+.insert-ad {
+    
+    margin: 10px 0 0 22px;
+}
+
+.ad {
+    color: #202124;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    line-height: 1.5;  
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.qform {
+    margin: 0 -20px 27px -20px;
+    position: relative;
+    box-shadow: none;
+    border: 1px solid #dfe1e1;
+    border-radius: 8px;
+}
+
+.ques {
+    text-align: left;
+    font-weight: normal;
+    color: #222;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid #e5e5e5;
+    padding: 9px 26px 9px 16px;
+    line-height: 1.57;
+}
+
+.qtitle {
+    line-height: 1.3;
+    margin: 0;
+    font-size: 20px;
+    padding: 9px 16px;
+}
+
+.fb {
+    float: right;
+    margin-left: 2em;
+    color: #70757a;
+    font-size: 12px;
+    line-height: 1.33;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: normal;
+    font-style: italic;
+    padding: 6px 16px 0;
+    overflow: hidden;
+
+}
+
+.fb:hover {
+    text-decoration: underline;
+}
+
+.scdwn {
+    line-height: 24px;
+    color: #70757A;
+    float: right;
 }
