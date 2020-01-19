@@ -1,26 +1,27 @@
 header {
     background-color: #fff;
+    padding-top: 7px;
 }
 
 body {
     font-family: Helvetica,Arial,sans-serif;
     color: #222;
     background-color: #fff;
-    width: 100%;
 }
 
 nav {
     color: gray;
-    margin-top: -18px;
+    margin-top: 0;
     display: inline-block;
-    height: 72px;
+    height: 54px;
     position: relative;
 }
 
 .title-bar {
-    align-items: center;
-    display: flex;
-    margin: 15px 15px 0px 15px;
+    display: inline-flex;
+    margin: 0px 0px 0px 12px;
+    width: 98%;
+    overflow: hidden;
 }
 
 li {
@@ -42,27 +43,32 @@ a {
     border-radius: 3px;
     color: #fff;
     font-weight: 800;
+    line-height: 1.2;
     padding: 8px;
-    display: inline;
-    position: absolute;
-    min-width: 60px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.menu {
-    padding-right: 18px;
-    padding-top: 3px;
-    position: relative;
     
 }
 
+.btn {
+    float: right;
+}
+
+.menu {
+    width: 30px;
+    padding-right: 18px;
+    padding-top: 4px;
+}
+
 .menu-options {
-    position: relative;
-    display: inline-block;
-    height: 30px;
-    width: 150px;
-    padding-left: 20%;
-    padding-right: 10px;
+    overflow: hidden;
+    padding-left: 16%;
+    display: flex;
+    margin: 10px 0 0 auto;
+}
+
+.menu-options ul {
+    padding: 0;
+    height: 16px;
 }
 
 input {
@@ -106,8 +112,8 @@ em {
 
 #googlelogo {
     border: 0;
-    display: relative;
-    margin: -10px 14px 0 -6px;
+    display: flex;
+    margin: 13px 14px 10px 0px;
 }
 
 .nav-menu li:first-child a {
@@ -115,7 +121,7 @@ em {
 }
 
 .nav-menu a {
-    margin: 11px -2px 0px 0px;
+    margin: -7px -2px 0px 0px;
     padding: 16px 12px 12px 10px;
     color: #5f6368;
     line-height: 16px;
@@ -156,6 +162,7 @@ ul {
 .line {
     border-bottom: 1px solid #ebebeb;
     width: 100%;
+    
 }
 
 .searchbar {
@@ -179,18 +186,20 @@ ul {
 
 .search-col {
     margin: 0;
-    min-width: 1127px;
-    display: block;
+    display: flex;
     padding: 0;
     border: 0;
+    width: 100%;
     height: 100%;
+    
 }
 
 .result-box {
-    width: 616px;
+    width: 600px;
     margin-left: 158px;
     margin-right: 0px;
     text-align: left;
+    display: block;
 }
 
 .result-link {
@@ -207,7 +216,12 @@ ul {
     display: inline-block;
     padding-top: 2px;
     margin-bottom: 3px;
-    color: #1a0dab
+    color: #1a0dab;
+}
+
+.result-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .result p {
@@ -226,31 +240,85 @@ ul {
 }
 
 .main {
-    max-width: 1280px;
     height: 100%;
-    display: block;
-    min-width: 616px;
+    display: flex;
+    width: 782px;
 }
 
-.contents {
+.imgbar {
     width: 100%;
-    position: relative;
+
+}
+
+.imgtit {
+    font-size: 20px;
+    line-height: 1.3;
+    display: inline-block;
+    padding-top: 2px;
+    margin-bottom: 3px;
+    color: #1a0dab;
+    padding-bottom: 12px;
+}
+
+.imgtit:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.img-gal {
+    display: flex;
+    width: 100%;
+    height: 136px;
+}
+
+.sbc {
+    display: flex;
+    margin-left: 30px;
+    height: 960px;
+    width: 460px;
+    border: 1px solid #dfe1e5;
+    border-radius: 8px;
 }
 
 .sidebar {
-    position: relative;
-    width: 20%;
+    width: 100%;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
     text-align: left;
     color: #222;
+    flex-direction: column;
     min-width: 268px;
-    padding-bottom: 10px;
-    display: block;
+    display: flex;
     border: 0;
     padding: 0;
 }
+
+.sbtop {
+    height: 20%;
+    width: 460px;
+}
+
+.sbname {
+    height: 10%;
+    width: 460px;
+}
+
+.sbinfo {
+    height: 38%;
+    width: 460px;
+}
+
+.sbsm {
+    height: 12%;
+    width: 460px;
+}
+
+.sbbot {
+    height: 20%;
+    width: 460px;
+}
+
 
 .insert-ad {
     
@@ -286,6 +354,10 @@ ul {
     line-height: 1.57;
 }
 
+.ques:hover {
+    cursor: pointer;
+}
+
 .qtitle {
     line-height: 1.3;
     margin: 0;
@@ -310,6 +382,7 @@ ul {
 
 .fb:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .scdwn {
