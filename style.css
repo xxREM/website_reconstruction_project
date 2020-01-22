@@ -34,7 +34,6 @@ li i {
 
 
 a {
-    display: inline-block;
     text-decoration: none;
 }
 
@@ -46,11 +45,14 @@ a {
     line-height: 1.2;
     padding: 8px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    overflow: hidden;
 }
 
 .btn {
     float: right;
+    margin-bottom: 2px;
+    height: 16px;
+    min-width: 60px;;
 }
 
 .menu {
@@ -94,10 +96,12 @@ input {
 .nav-menu {
     margin-left: 148px;
     margin-top: 15px;
+    min-width: 637.8px;
 }
 
 .SearchButton {
     padding-left: 8px;
+    padding-bottom: 8px;
 }
 
 #more {
@@ -129,6 +133,7 @@ em {
     position: relative;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
 }
 
 .nav-menu a:hover {
@@ -339,16 +344,84 @@ ul {
 .rel-search {
     border: 1px solid #dfe1e5;
     border-radius: 8px;
-    height: 191px;
+    height: 159px;
     width: 640px;
     margin: 0 -20px;
-    
+    padding: 16px 0;
+}
+
+.rel-fb {
+    float:right;
+    line-height: 1.57;
+    color: #70757a;
+    font-size: small;
+    margin: 4px 16px 16px 0;
+    font-style: italic;
+
+}
+
+.rel-fb:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.rel {
+    color: #70757A;
+    font-size: 14px;
+    margin: 0 0 3px 16px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.fwb {
+    color: #222;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0 16px;
+}
+
+.fwb-gal {
+    padding-top: 14px;
+    padding-bottom: 4px;
+    height: 93px;
+    display: flex;
+    overflow: hidden;
+}
+
+.fwb-img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+    width: 82px;
+    overflow: hidden;
+}
+
+.fwb-img img {
+    height: 72px;
+}
+
+.fwb-name {
+    color: #1a0dab;
+    width: 80px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.29;
+    margin: 3px auto 0 auto;
+}
+
+.fwb-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fwb-img img:hover {
+    cursor: pointer;
 }
 
 .sbc {
     display: flex;
     margin-left: 30px;
-    height: 960px;
+    height: 560px;
     width: 460px;
     border: 1px solid #dfe1e5;
     border-radius: 8px;
@@ -369,30 +442,92 @@ ul {
 }
 
 .sbtop {
-    height: 20%;
+    height: 28%;
     width: 460px;
+    display: flex;
+    align-items: center;
+}
+
+.sbtit {
+    line-height: 1.2;
+    padding: 0 24px 0 15px;
+    font-size: 30px;
+    color: rgba(0,0,0,.87);
+}
+
+.sbtype {
+    color: #70757A;
+    line-height: 1.57;
+    font-size: 14px;
+    text-align: left;
+}
+
+.sb-icon {
+    float: right;
+    color: #5f6368;
+    line-height: 24px;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    padding-left: 4px;
+}
+
+.sb-icon i {
+    padding: 8px;
+    height: 24px;
+    width: 24px;
+}
+
+.sb-icon i:hover {
+    cursor: pointer;
+}
+
+.sb-img {
+    float: right;
+    height: 151px;
+    width: 151px;
+}
+
+.sb-img:hover {
+    cursor: pointer;
 }
 
 .sbname {
-    height: 10%;
+    height: 7%;
     width: 460px;
+    border-top: 1px solid #dfe1e5;
+    display: flex;
+}
+
+.sbmid {
+    line-height: 24px;
+    padding: 8px 0;
+    align-items: center;
+    display: flex;
+}
+
+.sblink {
+    color: #1a0dab;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.sblink i {
+    margin: 0 24px 0 15px;
+    font-size: 24px;
+    color: #70757A;
+}
+
+.sblink:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .sbinfo {
-    height: 38%;
+    height: 65%;
     width: 460px;
+    border-top: 1px solid #dfe1e5;
 }
-
-.sbsm {
-    height: 12%;
-    width: 460px;
-}
-
-.sbbot {
-    height: 20%;
-    width: 460px;
-}
-
 
 .insert-ad {
     
@@ -463,4 +598,86 @@ ul {
     line-height: 24px;
     color: #70757A;
     float: right;
+}
+
+.end-list {
+    color: #222;
+    margin-bottom: 28px;
+    width: 600px;
+    height: 150px;
+    margin-top: 36px;
+}
+
+.end-tit {
+    padding-bottom: 20px;
+    line-height: 1.3;
+    font-size: 20px;
+}
+
+.end-row {
+    width: 100%;
+    height: 104px;
+}
+
+.end-col {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.end-res {
+    padding: 3px 46px 3px 0;
+    line-height: 20px;
+    font-size: 14px;
+    color: #1a0dab;
+    float: left;
+}
+
+.end-res:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.end-nav {
+    width: 632px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.g {
+    height: 56px;
+    width: 28px;
+}
+
+.g img {
+    height: 40px;
+    width: auto;
+}
+
+.o {
+    width: 20px;
+    height: 56px;
+    font-size: 14px;
+    text-align: center;
+    color: #4285f4;
+}
+
+.o img {
+    height: 40px;
+    width: auto;
+}
+
+.l {
+    height: 56px;
+}
+.l img {
+    width: auto;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.o:hover {
+    text-decoration: underline;
 }
