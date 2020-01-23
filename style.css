@@ -458,9 +458,10 @@ ul {
 
 .sbc {
     display: flex;
-    margin-left: 30px;
-    height: 567px;
-    width: 450px;
+    margin-left: 55px;
+    margin-top: 6px;
+    height: 560px;
+    width: 454px;
     border: 1px solid #dfe1e5;
     border-radius: 8px;
 }
@@ -525,6 +526,7 @@ ul {
     float: right;
     height: 151px;
     width: 151px;
+    
 }
 
 .sb-img:hover {
@@ -719,7 +721,7 @@ ul {
 .sb-end {
     width: 90%;
     height: 60px;
-    margin-left: 30px;
+    margin-left: 55px;
 }
 
 .disc {
@@ -736,6 +738,7 @@ ul {
 
 .disc-end {
     float: right;
+    padding-right: 16px;
 }
 
 .claim {
